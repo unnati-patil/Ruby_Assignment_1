@@ -220,5 +220,12 @@ class StringOperations
 end
 
 
-StringOperations.menu
-		
+def menuDriven
+	if 'Y' || 'y'
+		StringOperations.menu
+		puts "you want to continue? press 'Y' || 'y'"
+		gets()
+	end
+end
+
+StringOperations.menuDriven
